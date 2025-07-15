@@ -1,95 +1,46 @@
 # Tugas-pert14_24110310078_Siti-Adawiah_2A-BD
-1. Pengembangan Aplikasi
-Deskripsi:
-   Aplikasi ini merupakan sistem toko sepatu berbasis CLI (Command Line Interface) dengan dua peran utama: penjual dan pembeli. Aplikasi ini dibangun menggunakan bahasa Python dan bersifat interaktif.
-#Fitur yang diimplementasikan:
--Implementasi lengkap sistem inventori (sepatu, stok, harga)
--Penambahan fitur tambahan:
--Laporan pemasukan
--Riwayat pembelian
--Data pembeli
-#Optimisasi kode:
--Struktur modular (fungsi khusus untuk penjual dan pembeli)
--Menghindari duplikasi kode
--Menggunakan struktur data efisien (dictionary dan list)
-#Contoh fitur utama:
--Penjual dapat menambahkan sepatu baru, mengatur stok, melihat pemasukan, dan mengecek data pembeli.
--Pembeli dapat melihat stok, memesan sepatu, dan mendapatkan rincian total harga secara otomatis.
+# Laporan Tugas Praktikum – Sistem Toko Sepatu
+1. Bikin Program Aplikasinya
+   Pada bagian ini, saya membuat sebuah program sederhana menggunakan bahasa pemrograman Python yang berfungsi untuk mengelola aktivitas jual beli di toko sepatu. Aplikasi ini berbasis terminal dan terbagi menjadi dua peran utama, yaitu penjual dan pembeli.
+* Penjual dapat:
+-Menambahkan data sepatu baru ke dalam stok.
+-Memperbarui stok dan harga sepatu yang sudah ada.
+-Melihat total pemasukan dari hasil transaksi.
+-Melihat daftar pembeli dan riwayat pembelian.
+* Pembeli dapat:
+-Melihat daftar sepatu yang tersedia lengkap dengan harga dan jumlah stok.
+-Memesan sepatu dalam jumlah tertentu.
+-Melihat total harga yang harus dibayar berdasarkan jumlah yang dipesan.
+   Semua data disimpan sementara di memori (tidak menggunakan database atau file), sehingga sistem berjalan cepat dan ringan. Program ini sepenuhnya interaktif dan bisa dijalankan langsung melalui terminal.
+  
+2. Dokumentasi Teknis (Komentar Penjelasan per Blok Kode)
+   Untuk memudahkan pemahaman bagi programmer lain, saya menambahkan komentar-komentar penjelas di dalam setiap bagian penting dalam kode.
+-Setiap fungsi seperti menu_penjual() dan menu_pembeli() dijelaskan di atas definisinya agar mudah diketahui apa tujuan fungsi tersebut.
+-Di bagian struktur data, seperti dictionary stok_sepatu, diberikan komentar yang menjelaskan bagaimana data sepatu disimpan dan dikelola.
+-Untuk pengambilan keputusan menggunakan if, juga ditambahkan komentar agar alur logika bisa dipahami secara cepat.
+-Selain itu, bagian-bagian seperti perhitungan total harga, validasi stok, dan penambahan transaksi ke riwayat juga diberi       penjelasan singkat agar jelas bagaimana sistem bekerja.
+Dengan dokumentasi teknis berupa komentar per blok ini, siapa pun yang membaca kodenya bisa mengerti maksud setiap bagian tanpa harus menebak atau membaca keseluruhan program terlebih dahulu.
 
-2. Dokumentasi Teknis
-Dokumen Spesifikasi Sistem:
-#Aplikasi dijalankan berbasis CLI.
-#Terdapat 2 peran pengguna:
--Penjual: Memiliki akses penuh terhadap data, stok, dan transaksi.
--Pembeli: Hanya dapat melihat stok dan melakukan pembelian.
-#Setiap sepatu memiliki atribut:
--Nama sepatu
--Jumlah stok
--Harga satuan
-Code Documentation:
-# Fungsi menu_penjual():
-# Menyediakan fitur untuk melihat pemasukan, mengelola stok sepatu, dan melihat data transaksi serta pembeli.
+3. Buat User Manual (Untuk Pengguna Awam)
+   User manual ini ditujukan untuk orang awam yang ingin menjalankan aplikasi, tanpa harus tahu cara kerja teknisnya. Berikut panduan dasarnya:
+* Cara menjalankan aplikasi:
+-Pastikan Python sudah terinstal di komputer.
+-Jalankan file Python lewat terminal atau command prompt:
+   python toko_sepatu.py
+* Jika memilih sebagai penjual, pengguna bisa:
+-Menambahkan sepatu baru dan stoknya.
+-Melihat stok semua sepatu yang tersedia.
+-Memperbarui harga sepatu.
+-Melihat total pemasukan.
+-Melihat daftar pembeli dan riwayat transaksi.
+* Jika memilih sebagai pembeli, pengguna bisa:
+-Melihat sepatu yang tersedia.
+-Memesan sepatu dan memasukkan jumlah yang diinginkan.
+-Mendapatkan informasi total harga yang harus dibayar.
+* Contoh notifikasi/peringatan:
+-Jika pembeli memasukkan jumlah lebih banyak dari stok, sistem akan menampilkan pesan: "Stok tidak mencukupi".
+-Jika sepatu yang dicari tidak ada, sistem akan memberi tahu: "Sepatu tidak ditemukan."
 
-# Fungsi menu_pembeli():
-# Menyediakan antarmuka bagi pembeli untuk melihat stok dan melakukan pemesanan sepatu.
-
-# Struktur data utama:
-# stok_sepatu = {nama_sepatu: {"stok": jumlah, "harga": harga}}
-# riwayat_pembelian = [ {nama_pembeli, nama_sepatu, jumlah, total_harga}, ... ]
-# data_pembeli = [nama_pembeli1, nama_pembeli2, ...]
-
-Diagram Alur Kerja (bisa digambarkan atau ditulis deskripsi):
-
-[ Main Menu ]
-   ├──> Penjual
-   │     ├── Lihat Pemasukan
-   │     ├── Tambah Stok Sepatu
-   │     ├── Lihat Stok
-   │     ├── Riwayat Pembelian
-   │     └── Data Pembeli
-   └──> Pembeli
-         ├── Lihat Stok
-         └── Pesan Sepatu
-
-3. User Manual
-Panduan Instalasi dan Konfigurasi:
-1. Install Python (minimal versi 3.8)
-2. Simpan file program sebagai toko_sepatu.py
-3. Jalankan melalui terminal atau command prompt:
-python toko_sepatu.py
-Tutorial Penggunaan Aplikasi:
--Setelah menjalankan program, pengguna akan diminta memilih peran: penjual atau pembeli.
--Jika masuk sebagai Penjual, tersedia pilihan untuk menambah stok, melihat pemasukan, dan mengakses riwayat.
--Jika masuk sebagai Pembeli, pengguna dapat melihat stok sepatu dan memesan dengan jumlah tertentu.
--Semua interaksi dilakukan melalui input teks di terminal.
-FAQ dan Troubleshooting Guide:
-Q: Apakah stok akan otomatis berkurang setelah pembelian?
-A: Ya, stok akan berkurang sesuai jumlah pembelian.
-
-Q: Bagaimana jika sepatu tidak ditemukan saat pembelian?
-A: Akan muncul pesan "Sepatu tidak ditemukan".
-
-Q: Apakah sistem menyimpan data setelah program ditutup?
-A: Tidak. Ini versi sederhana tanpa database. Untuk versi lanjutan bisa ditambahkan penyimpanan ke file JSON/CSV.
-
-4. Pengujian dan Evaluasi
-Test Suite yang Komprehensif:
--Input pembeli dengan jumlah valid → stok berkurang sesuai
--Input pembeli dengan jumlah melebihi stok → sistem menolak pembelian
--Penjual menambahkan sepatu baru → muncul di daftar stok
--Data pembeli dan riwayat transaksi tercatat
-Laporan Hasil Pengujian:
-| Fitur               | Input                          | Output yang Diharapkan             | Status |
-| ------------------- | ------------------------------ | ---------------------------------- | ------ |
-| Tambah Stok Sepatu  | Sepatu baru, 5 pcs, 200.000    | Sepatu muncul di daftar stok       | ✅      |
-| Pembelian Sepatu    | Nama: Ana, Sepatu: Puma, 2 pcs | Total harga muncul, stok berkurang | ✅      |
-| Lihat Riwayat       | -                              | Menampilkan riwayat pembelian      | ✅      |
-| Invalid Jumlah Beli | Beli 20 padahal stok 5         | Muncul pesan stok tidak mencukupi  | ✅      |
-
--Analisis Kinerja dan Optimisasi:
--Aplikasi sangat ringan karena berbasis CLI dan tidak bergantung pada library eksternal.
--Menggunakan loop dan struktur dict efisien untuk akses data.
--Bisa dikembangkan lebih lanjut menjadi versi GUI dengan Tkinter atau web-based dengan Flask/Django.
-
-
-
+4. Pengujian dan Evaluasi Performa (Jalanin Semua Programnya)
+   Pengujian dilakukan dengan menjalankan semua fitur dari aplikasi secara langsung. Saya mencoba beberapa skenario untuk memastikan program berjalan dengan benar.
+* Beberapa hal yang diuji:
