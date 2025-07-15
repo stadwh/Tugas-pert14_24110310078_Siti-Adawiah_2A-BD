@@ -2,12 +2,12 @@
 # Laporan Tugas Praktikum – Sistem Toko Sepatu
 1. Bikin Program Aplikasinya
    Pada bagian ini, saya membuat sebuah program sederhana menggunakan bahasa pemrograman Python yang berfungsi untuk mengelola aktivitas jual beli di toko sepatu. Aplikasi ini berbasis terminal dan terbagi menjadi dua peran utama, yaitu penjual dan pembeli.
-  Penjual dapat:
+# Penjual dapat:
 * Menambahkan data sepatu baru ke dalam stok.
 * Memperbarui stok dan harga sepatu yang sudah ada.
 * Melihat total pemasukan dari hasil transaksi.
 * Melihat daftar pembeli dan riwayat pembelian.
-  Pembeli dapat:
+# Pembeli dapat:
 * Melihat daftar sepatu yang tersedia lengkap dengan harga dan jumlah stok.
 * Memesan sepatu dalam jumlah tertentu.
 * Melihat total harga yang harus dibayar berdasarkan jumlah yang dipesan.
@@ -23,33 +23,33 @@
 
 3. Buat User Manual (Untuk Pengguna Awam)
    User manual ini ditujukan untuk orang awam yang ingin menjalankan aplikasi, tanpa harus tahu cara kerja teknisnya. Berikut panduan dasarnya:
-  Cara menjalankan aplikasi:
+# Cara menjalankan aplikasi:
 * Pastikan Python sudah terinstal di komputer.
 * Jalankan file Python lewat terminal atau command prompt:
    python toko_sepatu.py
-  Jika memilih sebagai penjual, pengguna bisa:
+# Jika memilih sebagai penjual, pengguna bisa:
 * Menambahkan sepatu baru dan stoknya.
 * Melihat stok semua sepatu yang tersedia.
 * Memperbarui harga sepatu.
 * Melihat total pemasukan.
 * Melihat daftar pembeli dan riwayat transaksi.
-  Jika memilih sebagai pembeli, pengguna bisa:
+# Jika memilih sebagai pembeli, pengguna bisa:
 * Melihat sepatu yang tersedia.
 * Memesan sepatu dan memasukkan jumlah yang diinginkan.
 * Mendapatkan informasi total harga yang harus dibayar.
-  Contoh notifikasi/peringatan:
+# Contoh notifikasi/peringatan:
 * Jika pembeli memasukkan jumlah lebih banyak dari stok, sistem akan menampilkan pesan: "Stok tidak mencukupi".
 * Jika sepatu yang dicari tidak ada, sistem akan memberi tahu: "Sepatu tidak ditemukan."
 
 4. Pengujian dan Evaluasi Performa (Jalanin Semua Programnya)
    Pengujian dilakukan dengan menjalankan semua fitur dari aplikasi secara langsung. Saya mencoba beberapa skenario untuk memastikan program berjalan dengan benar.
-  Beberapa hal yang diuji:
+# Beberapa hal yang diuji:
 * Penambahan sepatu baru ke dalam stok.
 * Pemesanan sepatu dengan jumlah yang valid.
 * Simulasi pembelian dengan jumlah melebihi stok (hasilnya: sistem menolak dan memberi peringatan).
 * Melihat laporan pemasukan dan riwayat transaksi.
 * Mengetes input tidak valid (misalnya, sepatu yang tidak ada dalam daftar).
-  Hasil evaluasi:
+# Hasil evaluasi:
 * Semua fitur berjalan sesuai fungsinya.
 * Program cukup ringan dan cepat dijalankan.
 * Tidak ada error fatal saat diuji dengan input yang bermacam-macam.
