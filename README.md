@@ -18,7 +18,7 @@
 * Setiap fungsi seperti menu_penjual() dan menu_pembeli() dijelaskan di atas definisinya agar mudah diketahui apa tujuan fungsi tersebut.
 * Di bagian struktur data, seperti dictionary stok_sepatu, diberikan komentar yang menjelaskan bagaimana data sepatu disimpan dan dikelola.
 * Untuk pengambilan keputusan menggunakan if, juga ditambahkan komentar agar alur logika bisa dipahami secara cepat.
-* Selain itu, bagian-bagian seperti perhitungan total harga, validasi stok, dan penambahan transaksi ke riwayat juga diberi       penjelasan singkat agar jelas bagaimana sistem bekerja.
+* Selain itu, bagian-bagian seperti perhitungan total harga, validasi stok, dan penambahan transaksi ke riwayat juga diberi penjelasan singkat agar jelas bagaimana sistem bekerja.
    Dengan dokumentasi teknis berupa komentar per blok ini, siapa pun yang membaca kodenya bisa mengerti maksud setiap bagian tanpa harus menebak atau membaca keseluruhan program terlebih dahulu.
 
 3. Buat User Manual (Untuk Pengguna Awam)
